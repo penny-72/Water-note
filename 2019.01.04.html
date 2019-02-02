@@ -1,65 +1,65 @@
 <html>
-<head>
-<title>2019.01.04上課筆記</title>
-<meta charset="utf-8">
-<link rel="shortcut icon" href="favicon-2.ico" />
-<style>
-#header{height:20%;background-color:#333399;);background-repeat:no-repeat;background-size:cover;padding:1em;text-align:center;color:white;font-family:verdana}
-#article{height:100%;background-color:lightgray;background-image:linear-gradient(#00004d,#b3b3ff,lightyellow);background-size:cover;padding:1em;font-family:verdana}
-#footer{height:10%;background-color:#b3c6ff;text-align:center;color:;padding:2em;font-family:verdana}
-p{color:white;font-family:verdana}
-a:link{color:#7070db;background-color:lightblue;padding:16px;font-family:verdana}
-a:visited{color:#7070db;background-color:lightyellow;padding:16px;font-family:verdana}
-a:hover{color:#7070db;background-color:lightgray;padding:16px;font-family:verdana}
-a:active{color:#7070db;background-color:#262673;padding:16px;font-family:verdana}
-th,td{box-sizing: border-box;width:150px;text-align:center;border-left:1.5px solid #ddd;color:lightyellow;padding:1em;background-color:#b3b3cc}
-tr:hover{background-color:#b3b3cc}
-/*div
-{
-background-image:url("star01.jpg"), url("star02.jpg");
-background-position: right bottom, left top;
-background-repeat:no-repeat, repeat;
-height: 500px;
-}*/
+  <head>
+    <title>2019.01.04上課筆記</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon-2.ico" />
+    <style>
+        #header{height:20%;background-color:#333399;);background-repeat:no-repeat;background-size:cover;padding:1em;text-align:center;color:white;font-family:verdana}
+        #article{height:100%;background-color:lightgray;background-image:linear-gradient(#00004d,#b3b3ff,lightyellow);background-size:cover;padding:1em;font-family:verdana}
+        #footer{height:10%;background-color:#b3c6ff;text-align:center;color:;padding:2em;font-family:verdana}
+        p{color:white;font-family:verdana}
+        a:link{color:#7070db;background-color:lightblue;padding:16px;font-family:verdana}
+        a:visited{color:#7070db;background-color:lightyellow;padding:16px;font-family:verdana}
+        a:hover{color:#7070db;background-color:lightgray;padding:16px;font-family:verdana}
+        a:active{color:#7070db;background-color:#262673;padding:16px;font-family:verdana}
+        th,td{box-sizing: border-box;width:150px;text-align:center;border-left:1.5px solid #ddd;color:lightyellow;padding:1em;background-color:#b3b3cc}
+        tr:hover{background-color:#b3b3cc}
+        /*div
+        {
+        background-image:url("star01.jpg"), url("star02.jpg");
+        background-position: right bottom, left top;
+        background-repeat:no-repeat, repeat;
+        height: 500px;
+        }*/
 
-.column {float: left; width: 25%; height: 350px; text-align: center;}
+        .column {float: left; width: 25%; height: 350px; text-align: center;}
 
-* {box-sizing: border-box;}
-@media screen and (max-width: 900px){.column{width: 50%;}}
-@media screen and (max-width: 600px){.column{width: 100%;}}
-</style>
-</head>
-<body>
-	<div id="header">
-		<h1>2019.01.04 NOTE</h1>
-  </div>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<div id="chart_div"></div>
-<script>
-google.charts.load('current', {packages: ['corechart', 'bar']});
-google.charts.setOnLoadCallback(drawBasic);
-function drawBasic(){
-  var data = new google.visualization.arrayToDataTable([
-['Time', 'Value'],
-['8 AM', 1], ['9 AM', 2], ['10 AM', 3], ['11 AM', 4], ['12 AM', 5],
-['13 AM', 6], ['14 AM', 5], ['15 AM', 4], ['16 AM', 3], ['17 AM', 2],
-]);
-var options = {
-title: 'Value Throughout the Day',
-hAxis: { title: 'Time of Day'},
-vAxis: {title: 'Value'}
-};
-var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
-chart.draw(data, options);
-}
-</script>
-  <div class="column"><h1>Column 1</h1><p>Put your content here</p></div>
-  <div class="column"><h1>Column 2</h1><p>Put your content here</p></div>
-  <div class="column"><h1>Column 3</h1><p>Put your content here</p></div>
-  <div class="column"><h1>Column 4</h1><p>Put your content here</p></div>
-  		<div id="article">
-        <p>function 方法名稱(){執行的內容}</p>
-        <p>var 產生一個盒子 = ...</p>
+        * {box-sizing: border-box;}
+        @media screen and (max-width: 900px){.column{width: 50%;}}
+        @media screen and (max-width: 600px){.column{width: 100%;}}
+    </style>
+  </head>
+  <body>
+	  <div id="header">
+		  <h1>2019.01.04 NOTE</h1>
+    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <div id="chart_div"></div>
+      <script>
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+        google.charts.setOnLoadCallback(drawBasic);
+        function drawBasic(){
+          var data = new google.visualization.arrayToDataTable([
+        ['Time', 'Value'],
+        ['8 AM', 1], ['9 AM', 2], ['10 AM', 3], ['11 AM', 4], ['12 AM', 5],
+        ['13 AM', 6], ['14 AM', 5], ['15 AM', 4], ['16 AM', 3], ['17 AM', 2],
+        ]);
+        var options = {
+        title: 'Value Throughout the Day',
+        hAxis: { title: 'Time of Day'},
+        vAxis: {title: 'Value'}
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+        }
+      </script>
+    <div class="column"><h1>Column 1</h1><p>Put your content here</p></div>
+    <div class="column"><h1>Column 2</h1><p>Put your content here</p></div>
+    <div class="column"><h1>Column 3</h1><p>Put your content here</p></div>
+    <div class="column"><h1>Column 4</h1><p>Put your content here</p></div>
+  	<div id="article">
+      <p>function 方法名稱(){執行的內容}</p>
+      <p>var 產生一個盒子 = ...</p>
         <form style="color:white;">
           請輸入身高:<input type="text" id="height">
         </form>
@@ -95,24 +95,8 @@ chart.draw(data, options);
 	       </tr>
   			</table>
   		</div>
-
-  <!--<div id="footer">
-        <a href="https://sites.google.com/view/x-village/course" target="_blank">X-Village課程</a>
-        <a href="http://www.quickmark.com.tw/cht/qrcode-datamatrix-generator/default.asp?qrLink" target="_blank">QR Code</a>
-        <a href="https://www.weibo.com/ttarticle/p/show?id=2309404000866985196230">星空</a>
-	<a href="https://www.ozchamp.com/knowledge-d821-n2.html">網頁設計</a>
-	<a href="https://www.posterpresentations.com/free-poster-templates.html">海報</a>
-	<a href="https://www.cwb.gov.tw/V7/eservice/docs/overview/observation/metro/sfc_obs.htm#%E9%A0%81%E9%A6%96">地面氣象觀測</a>
-        <a href="http://fhy.wra.gov.tw/fhy/Monitor/Rain">經濟部水利署</a>
-	<a href="https://opendata.cwb.gov.tw/dataset/observation?page=1">氣象開放資料</a>
-	<a href="http://opendata.wra.gov.tw/System/wsReservoir/Default.aspx?index=6D407056F8BED306&sm=9DFBFFB598924D48">經濟部水利署-水資料應用</a>
-	<a href="https://gic.wra.gov.tw/gic/Water/Space/WaterMain.aspx">地理資訊倉儲中心</a>
-	<a href="http://wise.wra.gov.tw/dataset?_organization_limit=0&groups=water-resources&groups=statistic-of-water-resources">水資料分享站</a>
-	<a href="http://wuss.wra.gov.tw/annualreports/20120003%E4%B9%9D%E5%8D%81%E4%B9%9D%E5%B9%B4%E8%BE%B2%E6%A5%AD%E7%94%A8%E6%B0%B4%E9%87%8F%E7%B5%B1%E8%A8%88.pdf">99年農業用水量統計</a>
-  	<a href="https://gweb.wra.gov.tw/Hydroinfo/">水文資訊網整合服務</a>
-	</div>-->
-  <div id="footer">
-    <h1>2019.01.04 NOTE</h1>
-  </div>
-</body>
+    <div id="footer">
+      <h1>2019.01.04 NOTE</h1>
+    </div>
+  </body>
 </html>
